@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*header*/
+.header-inner {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.fa-bolt{
+  width: 0 auto;
+  font-size: 30px;
+  color: #4e4e4e;
+}
+
+.header-inner div{
+  width: 0 auto;
+  font-size: 12px;
+  background-color: #74cfae;
+  padding: 14px 12px;
+  color: #fff;
+}
+
+.header-inner div:hover{
+  background-color: #333;
+  transition: 0.3s;
+}
+
+/*main div(theme)*/
+.top-title{
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-color: #f2f2f2;
+}
+
+.top-title h1{
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.top-title h2{
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+/*main section (what we can do)*/
+.what-inner{
+  width: 100%;
+  display: flex;
+  background-color: #74cfae;
+}
+
+.what-inner img{
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.what-text{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.what-text h2{
+  font-size: 24px;
+  padding-bottom: 35px;
+}
+
+.what-text p{
+  font-size: 20px;
+}
+
+/* main article (our latest work) */
+.work-inner{
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.work-inner h2{
+  font-size: 24px;
+  padding-top: 60px;
+}
+
+.work-img img{
+  padding: 40px 50px 40px;
+}
+
+.work-text{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.work-text p{
+  width: 35%;
+  padding-right: 90px;
+}
+
+.work-text div{
+  height: 12px;
+  font-size: 12px;
+  padding: 14px 20px;
+  background-color: #74cfae;
+  color: #fff;
+}
+
+/*main section (our skills)*/
+.skills-inner{
+  width: 100%;
+  color: #fff;
+  background-color: #4e4e4e;
+}
+
+.skills-inner h2{
+  padding: 70px;
+}
+
+.skills-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.skills-img div{
+  padding: 0px 90px 0px;
+}
+
+.skills-img div p{
+  font-size: 16px;
+  padding: 20px;
+}
+
+/*main nav(sns)*/
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 200px;
+  background-color: #f2f2f2;
+  color: #74cfae;
+  font-size: 30px;
+}
+
+nav i{
+  width: 185px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav i:hover{
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/*footer*/
+footer{
+  padding: 20px 200px 25px;
+  background-color: #74cfae;
+  color: #fff;
+  text-align: right;
+}
+
