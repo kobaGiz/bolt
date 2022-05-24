@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-body {
-  font-family: 'Lato','Raleway';
+body{
+  font-family: 'Lato';
+}
+
+h1,h2{
+  font-family: 'Raleway';
 }
 
 .inner{
@@ -13,25 +17,26 @@ body {
 }
 
 /*header*/
-.header-inner {
-  width: 100%;
+.header {
+  width: 1600px;
+  height: 70px;
+  background-color: #fff;
   position: fixed;
+  z-index: 99;
+}
+
+.header-inner {
   display: flex;
   justify-content: space-around;
-  box-sizing: border-box;
   padding: 15px;
-  background-color: #fff;
-  z-index: 10;
 }
 
 .fa-bolt{
-  width: 0 auto;
   font-size: 30px;
   color: #4e4e4e;
 }
 
 .header-inner a{
-  width: 0 auto;
   font-size: 12px;
   background-color: #74cfae;
   padding: 14px 12px;
@@ -39,16 +44,22 @@ body {
 }
 
 .header-inner a:hover{
-  background-color: #333;
+  color: #333;
   transition: 0.3s;
 }
 
 /*main div(theme)*/
+.main{
+  background-color: #f2f2f2;
+}
+
+.main-top{
+  padding-top: 70px;
+}
+
 .top-title{
-  width: 100%;
   padding-top: 250px;
   padding-bottom: 250px;
-  background-color: #f2f2f2;
 }
 
 .top-title h1{
@@ -64,10 +75,12 @@ body {
 }
 
 /*main section (what we can do)*/
-.what-inner{
-  width: 100%;
-  display: flex;
+.section{
   background-color: #74cfae;
+}
+
+.what-inner{
+  display: flex;
 }
 
 .what-inner img{
@@ -92,8 +105,7 @@ body {
 }
 
 /* main article (our latest work) */
-.work-inner{
-  width: 100%;
+.article{
   background-color: #f2f2f2;
 }
 
@@ -102,19 +114,37 @@ body {
   padding-top: 60px;
 }
 
-.work-img img{
-  opacity: 0.7;
-  padding: 40px 50px 40px;
+.work-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.work-img img:hover{
+.work-img a{
+  opacity: 0.7;
+  /* padding: 40px 50px 40px; */
+  transition: 0.3s;
+  margin-left: 100px;
+}
+
+.work-img a:nth-child(3n+1){
+  margin-left: 0;
+}
+
+.work-img a:nth-child(n+4){
+  margin-top: 80px;
+}
+
+.work-img a:hover{
   opacity: 1;
   transition: 0.3s;
 }
 
 .work-text{
   width: 100%;
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 70px;
   display: flex;
   justify-content: center;
@@ -125,7 +155,7 @@ body {
   padding-right: 90px;
 }
 
-.work-text div{
+.work-text a{
   height: 12px;
   font-size: 12px;
   padding: 14px 20px;
@@ -134,10 +164,12 @@ body {
 }
 
 /*main section (our skills)*/
-.skills-inner{
-  width: 100%;
-  color: #fff;
+.our-section{
   background-color: #4e4e4e;
+}
+
+.skills-inner{
+  color: #fff;
 }
 
 .skills-inner h2{
@@ -147,7 +179,7 @@ body {
 
 .skills-img{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   padding-bottom: 100px;
   margin: 0 auto;
@@ -163,7 +195,7 @@ body {
 }
 
 /*main nav(sns)*/
-nav{
+.nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -192,6 +224,10 @@ footer{
   background-color: #74cfae;
   color: #fff;
   text-align: right;
+}
+
+@media screen and (min-width:1200px) {
+  
 }
 
 @media screen and (max-width:1199px) {
