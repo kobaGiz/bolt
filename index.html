@@ -18,11 +18,11 @@
     <header class="header">
       <div class="inner header-inner">
         <i class="fas fa-bolt"></i>
-        <a>Contact</a>
+        <a class="header-but" href="">Contact</a>
       </div>
     </header>
     <!-- main div(theme) -->
-    <main class="main main-top">
+    <main class="main">
       <div class="inner top-title">
         <h1>Bolt Theme</h1>
         <h2>FREE BOOTSTRAP THEMES</h2>
@@ -30,28 +30,30 @@
       <!-- main section (what we can do) -->
       <section class="section">
         <div class="inner what-inner">
-          <img src="img/iphone.png">
+          <img src="img/iphone.png" alt="">
           <div class="what-text">
             <h2>WHAT WE CAN DO?</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="what-table">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
           </div>
         </div>
-        </section>
+      </section>
       <!-- main article (our latest work) -->
       <article class="article">
         <div class="inner work-inner">
           <h2>OUR LATEST WORK</h2>
-          <div class="work-img">
-            <a><img src="img/01.jpg"></a>
-            <a><img src="img/02.jpg"></a>
-            <a><img src="img/03.jpg"></a>
-            <a><img src="img/04.jpg"></a>
-            <a><img src="img/05.jpg"></a>
-            <a><img src="img/06.jpg"></a>
+          <div class="work-list">
+            <a class="work-img" href=""><img src="img/01.jpg"></a>
+            <a class="work-img" href=""><img src="img/02.jpg"></a>
+            <a class="work-img" href=""><img src="img/03.jpg"></a>
+            <a class="work-img" href=""><img src="img/04.jpg"></a>
+            <a class="work-img" href=""><img src="img/05.jpg"></a>
+            <a class="work-img" href=""><img src="img/06.jpg"></a>
           </div>
           <div class="work-text">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-            <a>Email Me!</a>
+            <a class="work-email" href="">Email Me!</a>
           </div>
         </div>
       </article>
@@ -61,19 +63,19 @@
           <h2>OUR SKILLS</h2>
           <div class="skills-img">
             <div class="imgJava">
-              <img src="img/circle_01.png">
+              <img src="img/circle_01.png" alt="">
               <p>JavaScript</p>
             </div>
             <div class="imgBoot">
-              <img src="img/circle_02.png">
+              <img src="img/circle_02.png" alt="">
               <p>Bootstrap</p>
             </div>
             <div class="imgWord">
-              <img src="img/circle_03.png">
+              <img src="img/circle_03.png" alt="">
               <p>WordPress</p>
             </div>
             <div class="imgPhoto">
-              <img src="img/circle_04.png">
+              <img src="img/circle_04.png" alt="">
               <p>Photoshop</p>
             </div>
           </div>
@@ -81,15 +83,19 @@
       </section>
       <!--main nav(sns)-->
       <nav class="nav">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-dribbble"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fas fa-envelope"></i>
+        <div class="inner nav-list">
+          <a class="nav-link" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="nav-link" href=""><i class="fab fa-dribbble"></i></a>
+          <a class="nav-link" href=""><i class="fab fa-twitter"></i></a>
+          <a class="nav-link" href=""><i class="fas fa-envelope"></i></a>
+        </div>
       </nav>
     </main>
     <!--footer-->
-    <footer>
-      <p>Crafted with♥by BlackTie.co.</p>
+    <footer class="footer">
+      <div class="inner footer-inner">
+      <p>Crafted with <i class="fa fa-heart"></i> by BlackTie.co.</p>
+      </div>
     </footer>
   </body>
 </html>

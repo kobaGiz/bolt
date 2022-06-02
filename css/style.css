@@ -11,15 +11,11 @@ h1,h2{
 .inner{
   width: 1100px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 /*header*/
 .header {
-  width: 1600px;
-  height: 70px;
+  width: 100%;
   background-color: #fff;
   position: fixed;
   z-index: 99;
@@ -27,8 +23,7 @@ h1,h2{
 
 .header-inner {
   display: flex;
-  justify-content: space-around;
-  padding: 15px;
+  padding: 15px 0 15px;
 }
 
 .fa-bolt{
@@ -36,30 +31,31 @@ h1,h2{
   color: #4e4e4e;
 }
 
-.header-inner a{
+.header-but{
   font-size: 12px;
   background-color: #74cfae;
   padding: 14px 12px;
   color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-left: auto;
 }
 
-.header-inner a:hover{
+.header-but:hover{
   color: #333;
   transition: 0.3s;
 }
 
 /*main div(theme)*/
 .main{
-  background-color: #f2f2f2;
-}
-
-.main-top{
   padding-top: 70px;
+  background-color: #f2f2f2;
 }
 
 .top-title{
   padding-top: 250px;
   padding-bottom: 250px;
+  text-align: center;
 }
 
 .top-title h1{
@@ -81,15 +77,17 @@ h1,h2{
 
 .what-inner{
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .what-inner img{
-  padding-top: 50px;
   margin: 0 auto;
 }
 
 .what-text{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   color: #fff;
@@ -102,6 +100,13 @@ h1,h2{
 
 .what-text p{
   font-size: 20px;
+  align-items: center;
+  line-height: 30px;
+}
+
+.what-table{
+  text-align: justify;
+  text-align-last: center;
 }
 
 /* main article (our latest work) */
@@ -109,12 +114,16 @@ h1,h2{
   background-color: #f2f2f2;
 }
 
+.work-inner{
+  text-align: center;
+}
+
 .work-inner h2{
   font-size: 24px;
   padding-top: 60px;
 }
 
-.work-img{
+.work-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -122,22 +131,21 @@ h1,h2{
   margin-top: 40px;
 }
 
-.work-img a{
+.work-img{
   opacity: 0.7;
-  /* padding: 40px 50px 40px; */
   transition: 0.3s;
   margin-left: 100px;
 }
 
-.work-img a:nth-child(3n+1){
+.work-img:nth-child(3n+1){
   margin-left: 0;
 }
 
-.work-img a:nth-child(n+4){
+.work-img:nth-child(n+4){
   margin-top: 80px;
 }
 
-.work-img a:hover{
+.work-img:hover{
   opacity: 1;
   transition: 0.3s;
 }
@@ -151,16 +159,25 @@ h1,h2{
 }
 
 .work-text p{
-  width: 35%;
+  width: 42%;
   padding-right: 90px;
+  text-align: center;
+  line-height: 20px;
 }
 
-.work-text a{
+.work-email{
   height: 12px;
   font-size: 12px;
   padding: 14px 20px;
   background-color: #74cfae;
   color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.work-email:hover{
+  color: #333;
+  transition: 0.3s;
 }
 
 /*main section (our skills)*/
@@ -170,6 +187,7 @@ h1,h2{
 
 .skills-inner{
   color: #fff;
+  text-align: center;
 }
 
 .skills-inner h2{
@@ -179,7 +197,6 @@ h1,h2{
 
 .skills-img{
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   padding-bottom: 100px;
   margin: 0 auto;
@@ -196,44 +213,51 @@ h1,h2{
 
 /*main nav(sns)*/
 .nav{
+  background-color: #f2f2f2;
+}
+
+.nav-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 200px;
-  background-color: #f2f2f2;
+  padding: 200px 0 200px;
   color: #74cfae;
   font-size: 30px;
 }
 
-nav i{
+.nav-link {
   width: 185px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0 30px;
   size: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #74cfae;
 }
 
-nav i:hover{
+.nav-link:hover{
   background-color: #fff;
   transition: 0.3s;
 }
 
 /*footer*/
-footer{
-  padding: 20px 200px 25px;
+.footer{
   background-color: #74cfae;
+}
+
+.footer-inner{
+  padding: 20px 0px 25px;
   color: #fff;
   text-align: right;
 }
 
 @media screen and (min-width:1200px) {
-  
 }
 
 @media screen and (max-width:1199px) {
-  
+ 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px) and (max-width:1199px) {
   
 }
