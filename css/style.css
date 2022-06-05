@@ -23,7 +23,7 @@ h1,h2{
 
 .header-inner {
   display: flex;
-  padding: 15px 0 15px;
+  padding: 15px 0;
 }
 
 .fa-bolt{
@@ -53,8 +53,7 @@ h1,h2{
 }
 
 .top-title{
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding: 250px 0;
   text-align: center;
 }
 
@@ -95,11 +94,11 @@ h1,h2{
 
 .what-text h2{
   font-size: 24px;
-  padding-bottom: 35px;
 }
 
 .what-text p{
   font-size: 20px;
+  margin-top: 35px;
   align-items: center;
   line-height: 30px;
 }
@@ -116,11 +115,11 @@ h1,h2{
 
 .work-inner{
   text-align: center;
+  padding: 60px 0 70px;
 }
 
 .work-inner h2{
   font-size: 24px;
-  padding-top: 60px;
 }
 
 .work-list{
@@ -152,14 +151,13 @@ h1,h2{
 
 .work-text{
   width: 100%;
-  padding: 90px 0 70px;
+  margin-top: 90px;
   display: flex;
   justify-content: center;
 }
 
 .work-text p{
   width: 42%;
-  padding-right: 90px;
   text-align: center;
   line-height: 20px;
 }
@@ -168,6 +166,7 @@ h1,h2{
   height: 12px;
   font-size: 12px;
   padding: 14px 20px;
+  margin-left: 90px;
   background-color: #74cfae;
   color: #fff;
   transition: 0.3s;
@@ -187,27 +186,26 @@ h1,h2{
 .skills-inner{
   color: #fff;
   text-align: center;
+  padding: 70px 0 100px;
 }
 
 .skills-inner h2{
-  padding: 70px;
   font-size: 24px;
 }
 
 .skills-img{
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
-  margin: 0 auto;
+  margin-top: 45px;
 }
 
 .skills-img li{
-  padding: 0px 90px 0px;
+  margin: 0px 90px;
 }
 
 .skills-img li p{
   font-size: 16px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 /*main nav(sns)*/
@@ -219,7 +217,7 @@ h1,h2{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 200px 0 200px;
+  padding: 200px 0;
   color: #74cfae;
   font-size: 30px;
 }
@@ -227,10 +225,16 @@ h1,h2{
 .nav-link {
   width: 185px;
   text-align: center;
-  padding: 30px 0 30px;
+  padding: 30px 0;
   size: 50px;
   transition: 0.3s;
   text-decoration: none;
+}
+
+.nav-link a{
+  display: block;
+  padding: 30px 0;
+  margin: -30px 0;
 }
 
 .nav-link:hover{
@@ -270,12 +274,12 @@ h1,h2{
   }
 
   .what-text h2{
-    padding: 20px 0 35px;
+    margin-top: 20px;
   }
 
   .work-img{
     width: 100%;
-    margin: 0 auto;
+    margin-left: 0;
   }
 
   .work-img img{
@@ -289,7 +293,7 @@ h1,h2{
     margin-top: 80px;
   }
 
-  .work-list:nth-child(1) {
+  .work-img:nth-child(1) {
     margin-top: 0;
   }
 
@@ -299,13 +303,17 @@ h1,h2{
 
   .work-text{
     display: block;
-    padding-top: 80px;
+    margin-top: 80px;
   }
 
   .work-text p{
     width: 100%;
-    padding-right: 0;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .work-email{
+    margin-left: 0;
+    /* margin-top: 40px;効かない */
   }
 
   .skills-img{
@@ -313,13 +321,37 @@ h1,h2{
   }
 
   .skills-img li{
-    padding-bottom: 88px;
+    margin-top: 88px;
   }
 
-  .skills-img li:last-child{
-    padding-bottom: 0;
+  .skills-img li:first-child{
+    margin-top: 0;
   }
 
 @media screen and (max-width:767px) {
+  .header-inner a{
+    display: none;
+  }
+
+  .top-title{
+    padding: 160px 0 130px;
+  }
+
+  .top-title h1{
+    font-size: 80px;
+  }
   
+  .top-title p{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .nav-list{
+    display: block;
+  }
+  
+  .nav-link{
+    width: 100%;
+  }
+
 }
