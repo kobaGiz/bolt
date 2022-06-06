@@ -69,6 +69,10 @@ h1,h2{
   margin-top: 20px;
 }
 
+.sp{
+  display: none;
+}
+
 /*main section (what we can do)*/
 .section{
   background-color: #74cfae;
@@ -133,6 +137,7 @@ h1,h2{
 .work-img{
   opacity: 0.7;
   transition: 0.3s;
+  margin-top: 80px;
   margin-left: 100px;
 }
 
@@ -140,8 +145,8 @@ h1,h2{
   margin-left: 0;
 }
 
-.work-img:nth-child(n+4){
-  margin-top: 80px;
+.work-img:nth-child(-n+3){
+  margin-top: 0;
 }
 
 .work-img:hover{
@@ -225,7 +230,6 @@ h1,h2{
 .nav-link {
   width: 185px;
   text-align: center;
-  padding: 30px 0;
   size: 50px;
   transition: 0.3s;
   text-decoration: none;
@@ -234,7 +238,6 @@ h1,h2{
 .nav-link a{
   display: block;
   padding: 30px 0;
-  margin: -30px 0;
 }
 
 .nav-link:hover{
@@ -293,7 +296,7 @@ h1,h2{
     margin-top: 80px;
   }
 
-  .work-img:nth-child(1) {
+  .work-img:first-child {
     margin-top: 0;
   }
 
@@ -329,8 +332,12 @@ h1,h2{
   }
 
 @media screen and (max-width:767px) {
-  .header-inner a{
+  .header-but{
     display: none;
+  }
+
+  .sp{
+    display: block;
   }
 
   .top-title{
@@ -346,12 +353,20 @@ h1,h2{
     font-size: 30px;
   }
 
+  .work-img a{
+  }
+
   .nav-list{
     display: block;
+    padding: 50px 0;
   }
   
   .nav-link{
     width: 100%;
+  }
+
+  .nav-link a{
+    display: block;
   }
 
 }
